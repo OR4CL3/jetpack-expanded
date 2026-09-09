@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DDD",
+    "DJD",
+    "DDD"
+  ],
+  "key": {
+    "D": { "item": "minecraft:diamond" },
+    "J": { "item": "jetpackexpanded:jetpack_mk2" }
+  },
+  "result": {
+    "id": "jetpackexpanded:jetpack_mk3"
+  }
+}

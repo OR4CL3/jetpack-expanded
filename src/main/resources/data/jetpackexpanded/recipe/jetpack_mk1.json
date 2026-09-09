@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "RBR",
+    "III"
+  ],
+  "key": {
+    "I": { "item": "minecraft:iron_ingot" },
+    "R": { "item": "minecraft:redstone" },
+    "B": { "item": "minecraft:blaze_rod" }
+  },
+  "result": {
+    "id": "jetpackexpanded:jetpack_mk1"
+  }
+}

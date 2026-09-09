@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NNN",
+    "NJN",
+    "NNN"
+  ],
+  "key": {
+    "N": { "item": "minecraft:netherite_ingot" },
+    "J": { "item": "jetpackexpanded:jetpack_mk3" }
+  },
+  "result": {
+    "id": "jetpackexpanded:jetpack_mk4"
+  }
+}

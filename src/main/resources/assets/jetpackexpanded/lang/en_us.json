@@ -1,0 +1,13 @@
+{
+  "item.jetpackexpanded.jetpack_mk1": "Jetpack Mk I",
+  "item.jetpackexpanded.jetpack_mk2": "Jetpack Mk II",
+  "item.jetpackexpanded.jetpack_mk3": "Jetpack Mk III",
+  "item.jetpackexpanded.jetpack_mk4": "Jetpack Mk IV",
+  "item.jetpackexpanded.jetpack_creative": "Creative Jetpack",
+
+  "itemGroup.jetpackexpanded.jetpack_expanded": "Jetpack Expanded",
+
+  "key.jetpackexpanded.toggle_engine": "Toggle Jetpack Engine",
+  "key.jetpackexpanded.toggle_hover":  "Toggle Jetpack Hover",
+  "category.jetpackexpanded": "Jetpack Expanded"
+}

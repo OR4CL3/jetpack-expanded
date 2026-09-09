@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "jetpackexpanded",
+  "version": "${version}",
+  "name": "Jetpack Expanded",
+  "description": "Fully customizable energy-powered jetpacks for Fabric.",
+  "authors": ["YourName"],
+  "contact": {
+    "sources": "https://github.com/yourname/jetpack-expanded"
+  },
+  "license": "MIT",
+  "icon": "assets/jetpackexpanded/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.jetpackexpanded.JetpackExpanded"],
+    "client": ["dev.jetpackexpanded.JetpackExpandedClient"]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "~${minecraft_version}"
+  }
+}
