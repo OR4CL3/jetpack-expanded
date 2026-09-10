@@ -22,9 +22,6 @@ public class JetpackExpanded implements ModInitializer {
         ModItems.init();
         ModCreativeTabs.init();
 
-        // Registra energy storages (TeamReborn compatibility)
-        ModItems.registerEnergyStorages();
-
         // Network — payloads e handlers server-side
         JetpackNetwork.registerPayloads();
         JetpackNetwork.registerServerHandlers();

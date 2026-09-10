@@ -11,7 +11,9 @@ base {
 }
 
 repositories {
+    maven { url 'https://maven.fabricmc.net/' }
     maven { url 'https://maven.teamreborn.ovh/' }
+    mavenCentral()
 }
 
 dependencies {
@@ -20,8 +22,8 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
-    // TeamReborn Energy API — bundled no nosso jar (jar-in-jar)
-    modImplementation include("teamreborn:energy:${project.energy_version}")
+    // TeamReborn Energy API — opcional, habilite quando confirmar o maven
+    // modImplementation include("teamreborn:energy:${project.energy_version}")
 }
 
 processResources {

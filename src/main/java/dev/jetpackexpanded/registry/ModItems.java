@@ -1,6 +1,5 @@
 package dev.jetpackexpanded.registry;
 
-import dev.jetpackexpanded.energy.JetpackEnergyStorage;
 import dev.jetpackexpanded.item.JetpackItem;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
@@ -11,7 +10,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
-import team.reborn.energy.api.EnergyStorage;
 
 import java.util.EnumMap;
 import java.util.List;
@@ -40,18 +38,8 @@ public final class ModItems {
 
     // ── Init ─────────────────────────────────────────────────────────────────
 
-    /** Registra os EnergyStorages do TeamReborn para todos os jetpacks. */
-    @SuppressWarnings("UnstableApiUsage")
-    public static void registerEnergyStorages() {
-        JetpackItem[] all = { JETPACK_MK1, JETPACK_MK2, JETPACK_MK3, JETPACK_MK4, JETPACK_CREATIVE };
-
-        EnergyStorage.ITEM.registerForItems((stack, ctx) -> {
-            if (stack.getItem() instanceof JetpackItem jp) {
-                return new JetpackEnergyStorage(ctx, jp.getTier());
-            }
-            return null;
-        }, all);
-    }
+    // ponytail: TeamReborn energy removido do MVP — add quando o maven estiver ok
+    // Energia funciona normalmente via JetpackUtils (NBT direto)
 
     /** Chamado no entrypoint main para garantir que os estáticos sejam inicializados. */
     public static void init() { /* trigger static fields */ }
