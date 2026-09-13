@@ -15,7 +15,7 @@
     "main": ["dev.jetpackexpanded.JetpackExpanded"],
     "client": ["dev.jetpackexpanded.JetpackExpandedClient"]
   },
-  "mixins": [],
+  "mixins": ["jetpackexpanded.mixins.json"],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",

@@ -1,6 +1,7 @@
 package dev.jetpackexpanded.handler;
 
 import dev.jetpackexpanded.item.JetpackItem;
+import dev.jetpackexpanded.mixin.LivingEntityAccessor;
 import dev.jetpackexpanded.registry.JetpackTier;
 import dev.jetpackexpanded.util.JetpackUtils;
 import net.minecraft.entity.EquipmentSlot;
@@ -39,7 +40,7 @@ public final class JetpackHandler {
             }
 
             Vec3d vel = player.getVelocity();
-            boolean jumping = player.input != null && player.input.jumping;
+            boolean jumping = ((LivingEntityAccessor) player).jetpackexpanded$isJumping();
             boolean sneaking = player.isSneaking();
 
             double newY = vel.y;
