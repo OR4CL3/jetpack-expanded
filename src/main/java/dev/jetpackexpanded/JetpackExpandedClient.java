@@ -6,7 +6,7 @@ import dev.jetpackexpanded.network.payload.ToggleEnginePayload;
 import dev.jetpackexpanded.network.payload.ToggleHoverPayload;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.networking.v1.ClientPlayNetworking;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 
 public class JetpackExpandedClient implements ClientModInitializer {
 

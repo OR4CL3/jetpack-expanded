@@ -2,8 +2,9 @@ package dev.jetpackexpanded.item;
 
 import dev.jetpackexpanded.registry.JetpackTier;
 import dev.jetpackexpanded.util.JetpackUtils;
-import net.minecraft.client.item.TooltipType;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.entry.RegistryEntry;
@@ -26,7 +27,7 @@ public class JetpackItem extends ArmorItem {
     }
 
     @Override
-    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+    public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
         long energy = tier.isCreative() ? tier.maxEnergy() : JetpackUtils.getEnergy(stack);
         long max    = tier.maxEnergy();
 
