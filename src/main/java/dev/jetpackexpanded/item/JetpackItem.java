@@ -48,11 +48,6 @@ public class JetpackItem extends Item {
         }
     }
 
-    @Override
-    public boolean isEnchantable(ItemStack stack) {
-        return false;
-    }
-
     private static String formatFE(long fe) {
         if (fe == Long.MAX_VALUE / 2) return "∞";
         if (fe >= 1_000_000) return String.format("%.1fM", fe / 1_000_000.0);

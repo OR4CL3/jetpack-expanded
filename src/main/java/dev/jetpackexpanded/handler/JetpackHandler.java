@@ -29,11 +29,11 @@ public final class JetpackHandler {
 
             if (!engineOn || !hasEnergy) {
                 // Hover sem engine: amortece queda suavemente
-                if (hovering && player.isFallFlying()) return;
+                if (hovering && player.isGliding()) return;
                 if (hovering && player.getVelocity().y < 0) {
                     Vec3d vel = player.getVelocity();
                     player.setVelocity(vel.x, Math.max(vel.y, -tier.hoverSpeed()), vel.z);
-                    player.velocityModified = true;
+                    player.velocityDirty = true;
                     player.fallDistance = 0;
                 }
                 return;
@@ -58,7 +58,7 @@ public final class JetpackHandler {
             }
 
             player.setVelocity(vel.x, newY, vel.z);
-            player.velocityModified = true;
+            player.velocityDirty = true;
             player.fallDistance = 0;
 
             // Drena energia (creative não drena)

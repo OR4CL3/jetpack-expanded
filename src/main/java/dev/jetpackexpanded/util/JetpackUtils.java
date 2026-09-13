@@ -13,7 +13,7 @@ public final class JetpackUtils {
     // ── Energy ───────────────────────────────────────────────────────────────
 
     public static long getEnergy(ItemStack stack) {
-        return getNbt(stack).getLong("energy");
+        return getNbt(stack).getLong("energy").orElse(0L);
     }
 
     public static void setEnergy(ItemStack stack, long energy) {
@@ -36,7 +36,7 @@ public final class JetpackUtils {
     // ── Engine / Hover ───────────────────────────────────────────────────────
 
     public static boolean isEngineOn(ItemStack stack) {
-        return getNbt(stack).getBoolean("engine_on");
+        return getNbt(stack).getBoolean("engine_on").orElse(false);
     }
 
     public static void setEngineOn(ItemStack stack, boolean on) {
@@ -46,7 +46,7 @@ public final class JetpackUtils {
     }
 
     public static boolean isHovering(ItemStack stack) {
-        return getNbt(stack).getBoolean("hover_on");
+        return getNbt(stack).getBoolean("hover_on").orElse(false);
     }
 
     public static void setHovering(ItemStack stack, boolean on) {
